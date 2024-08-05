@@ -30,6 +30,9 @@ module "cloud_storage" {
   names            = ["one", "two"]
   randomize_suffix = true
 
+  // CODELAB: Add "silly_label" as an example to main.tf.
+ .silly_label      = "awesome"
+
   bucket_policy_only = {
     "one" = true
     "two" = false
